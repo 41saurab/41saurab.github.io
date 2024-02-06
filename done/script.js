@@ -1,7 +1,7 @@
 function yes() {
   const image = document.getElementById("vimage");
   const imge = "https://i.pinimg.com/originals/cd/0d/78/cd0d783e2a0bbd1eff091168de9ffe14.gif";
-  alert("You are his now.");
+  prompt("Do you love him?");
   image.src = imge;
 }
 
