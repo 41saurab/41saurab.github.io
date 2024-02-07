@@ -5,8 +5,18 @@ function yes() {
   const imgeas = "https://i.pinimg.com/originals/ec/0a/4e/ec0a4e9238a76a2b9afd367a98c14c32.gif";
   var guestName = ["I Love You"];
   var guest = prompt("Type 'I Love You: ");
-  var check = guestName.includes(guest);
-  if (check == true) {
+//   var check = guestName.includes(guest);
+//   if (check == true) {
+//     alert("You love him.");
+//     image.src = imge;
+//   } else {
+//     alert("You don't love him.");
+//     imageas.src = imgeas;
+//   }
+// }
+
+    var check = guestName.some(name => name.toLowerCase() === guest.toLowerCase());
+  if (check) {
     alert("You love him.");
     image.src = imge;
   } else {
